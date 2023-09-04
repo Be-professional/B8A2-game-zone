@@ -1,0 +1,51 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Work+Sans&display=swap');
+
+  *{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  header{
+    background-color: #FFF;
+    /* margin: 40px 240px; */
+    padding: 10px 240px;
+  }
+  nav > div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+   .gamer{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    color: #0B0223;
+   }
+
+   .primary-color{
+    color: #FF42A5;
+   }
+
+   .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+
+   ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+
+   }
+   ul li a{
+    text-decoration: none;
+    
+   }
+
+
