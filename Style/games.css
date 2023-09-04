@@ -49,3 +49,35 @@
    }
 
 
+
+   /* banner part  */
+   .banner{
+    display: flex;
+    gap: 68px;
+    align-items: center;
+   }
+   .banner img {
+    width: 100%;
+   }
+   .banner-title{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    /* margin-bottom: 1px; */
+   }
+
+   .banner-sub-title{
+    font-size: 95px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    margin-top: 5px;
+   }
+
+   .banner-sortcut{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+   }
+
+
