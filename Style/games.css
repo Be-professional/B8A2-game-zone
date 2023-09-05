@@ -138,6 +138,23 @@
     
    }
 
+ @media screen and (min-width:576px) and (max-width:768px) {
+    header{
+        padding: 40px
+    }
+    .nav, ul{
+        flex-direction: column;
+    }
+
+    .banner{
+        flex-direction: column;
+        text-align: center;   
+    }
+ }
+   
+
+   
+
 /* main part  */
 /* video games section  */
 
@@ -198,7 +215,24 @@
         flex-direction: column;
 
     } 
+    .games-list img{
+        /* width: 300px;
+        height: 360px; */
+        width: 100%;
+    }
 
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px)  {
+    .video-games-container{
+        margin: 30px 10px;
+        flex-direction: column; 
+
+    }
+    .video-games-description{
+        text-align: center;
+        margin-top: 5px;
+    }
 }
 
 
@@ -210,6 +244,8 @@
     margin: 30px 240px;
     justify-content: space-around;
     margin-top: 100px;
+    /* position: relative;
+    bottom: 100px; */
 }
 
 .instant-play-containe img{
@@ -237,6 +273,7 @@
     .instant-play-container{
         flex-direction: column;
         gap: 10px;
+        /* align-items: end; */
         margin:5px 30px;
     }
     .instant-play-title{
@@ -256,6 +293,37 @@
     /* .instant-play-containe img{
         width: 60%;
     } */
+}
+
+@media screen and (min-width: 576px) and (max-width:768px) {
+    .instant-play-container{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .instant-play-title{
+        text-align: center;
+    }
+    .instant-play-description{
+        text-align: center;
+        color: #534C64;
+        font-size: 18px;
+    }
+    .responsive img{
+        width: 100%;
+    }
+    .instant-play-img img{
+        /* width: 100%; */
+        width: 200px;
+        height: 200px;
+    }
+
+    .instant-play-img{
+   
+        margin:0 200px;
+        position: relative;
+        bottom: 150px;
+    }
 }
 
 .games-list{
@@ -282,7 +350,7 @@
     border: 1px solid pink;
     border-radius: 15px;
     background-color: #F948B2;
-    padding: 10px;
+    padding: 5px;
 }
 
 @media screen and (max-width: 576px) {
@@ -291,16 +359,23 @@
         gap: 2px;
         grid-template-columns: repeat(3, 1fr);
         padding: 0px;
+        justify-content: center;
     }
 }
 
-
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .games-list-container{
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+    }
+}
 
 
 /* footer part   */
 footer{
     background: #0B0223;
-    height: 400px;
+    /* height: 400px; */
+    width: 100%;
 }
 
 .footer-logo{
@@ -311,27 +386,106 @@ footer{
     /* margin-bottom: 10px; */
     /* text-align: center; */
 }
-
-footer ul{
-    justify-content: center;
-    /* margin-bottom: 10px; */
+.footer-gamer{
+    color: #FFF;
 }
 
-footer ul li{
-    /* margin-top: 10px; */
-    color: #FFF;
+.footer-title-container{
+    margin-top: 10px;
+    padding: 0px 300px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 50px;
     text-align: center;
+    justify-content: space-between;
+}
+.footer-title{
+    color: #FFF;
     font-size: 18px;
     font-weight: 600;
+    margin-top: 10px;
 }
 
-.copyright{
+/* .social-media-container{
+    margin-top: 10px;
+    padding: 0px 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    text-align: center;
+    justify-content: space-between;
+} */
+
+
+.social-media-container{
+    display: flex;
+    /* padding:0 300px ; */
+    /* text-align: center; */
+    /* gap: 60px; */
+    justify-content: space-between;
+
+
+}
+.social-media-container h4{
+    margin-left: 100px;
+    text-align: center;
+    /* justify-content: space-between; */
+    padding: 0 200px;
+
+}
+
+ .footer-policy-container{
+    margin-top: 10px;
+    padding: 0px 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    text-align: center;
+    justify-content: space-around
+ }
+
+ .policy{
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 500;
+    margin-top: 10px;
+ }
+
+ .copyright{
     color: rgba(255, 255, 255, 0.60);
     text-align: center;
-    font-size: 16px;
     font-weight: 500;
-}
+    margin-top: 5px;
+ }
 
-.footer-gamer{
-    color: rgba(255, 255, 255, 0.60);
-}
+ @media screen and (max-width: 768px) {
+    footer{
+        /* width: 100%; */
+        height: 100%;
+    }
+    .footer-title-container{
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        padding: 10px;
+        gap: 0px;
+    }
+    /* .social-media-container{
+        flex-direction: column;
+    } */
+    /* .social-media-containe{
+        padding: 500px;
+    } */
+    .social-media-container h4{
+        padding: 0;
+        margin: 0 40px;
+    }
+
+    .footer-policy-container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2px;
+        gap: 0px;
+    }
+ }
