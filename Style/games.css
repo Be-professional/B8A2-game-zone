@@ -279,7 +279,6 @@
     .instant-play-container{
         flex-direction: column;
         gap: 10px;
-        /* align-items: end; */
         margin:5px 30px;
     }
     .instant-play-title{
@@ -294,7 +293,6 @@
 
     .instant-play-img{
      margin:0px;
-     /* left: 100px; */
      padding: 0;
     }
     /* .instant-play-containe img{
@@ -306,32 +304,29 @@
     .instant-play-container{
         flex-direction: column;
         gap: 10px;
-        text-align: center;
+        margin:5px 30px;
     }
     .instant-play-title{
         text-align: center;
-    }
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 30px
+        }
+
+        .responsive img{
+            width: 100%;
+        }
     .instant-play-description{
         text-align: center;
         color: #534C64;
         font-size: 18px;
     }
-    .responsive img{
-        width: 100%;
-    }
-    .instant-play-img img{
-        width: 100%;
-        /* width: 200px;
-        height: 200px; */
-    }
+    
 
     .instant-play-img{
-   
-        margin:0 200px;
-        position: relative;
-        bottom: 150px;
-        right: 300px;
-    }
+        margin:0px;
+        padding: 0;
+       }
 }
 
 .games-list{
