@@ -8,10 +8,11 @@
   }
 
   header{
-    background-color: #FFF;
+    background: linear-gradient(235deg, rgba(140, 87, 238, 0.03) 3.9%, rgba(241, 68, 174, 0.03) 100.56%);
     /* margin: 40px 240px; */
     padding: 10px 240px;
   }
+
   nav > div {
     display: flex;
     gap: 10px;
@@ -31,12 +32,15 @@
    .nav{
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
+    /* background-color: #FFF; */
    }
 
    ul {
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 32px;
     color: #3C354F;
     font-size: 18px;
@@ -48,13 +52,24 @@
     
    }
 
-
+  .follow{
+    /* align-items: center;
+    justify-content: center; */
+     width: 200px;
+     height: 20px;
+    /* height: 56px; */
+    border-radius: 4px;
+    background: rgba(11, 2, 35, 0.10);
+}
 
    /* banner part  */
    .banner{
+    margin-top: 50px;
     display: flex;
     gap: 68px;
     align-items: center;
+    
+    /* background-color:rgba(241, 68, 174, 0.03) 100.56% ; */
    }
    .banner img {
     width: 100%;
@@ -78,6 +93,44 @@
     font-size: 20px;
     font-weight: 500;
     margin-top: 10px;
+   }
+
+   .sign-in-btn{
+    color: #FFF;
+    font-weight: 600;
+    border-radius: 48px;
+    padding:10px 21px ;
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);;
+   }
+
+   .rogue-btn{
+    color: #FFF;
+    font-weight: 600;
+    border-radius: 48px;
+    padding:10px 21px ;
+    background: #4EC5F7;
+    margin-left: 20px;
+   }
+
+   /* responsive for small device  */
+
+   @media screen and (max-width: 576px) {
+    header{
+        padding: 10px
+    }
+    .nav, ul{
+        flex-direction: column;
+    }
+    
+    /* ul{
+        text-align: center;
+    } */
+    .banner{
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
+        text-align: center;   
+    }
+    
    }
 
 
